@@ -3,5 +3,5 @@
 # Replace XXXXXXXXXXXXXXXX with your actual AdSense Publisher ID
 # Your Publisher ID can be found in your AdSense account under Account > Account information
 
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-6564476231402717, DIRECT, f08c47fec0942fa0
 
