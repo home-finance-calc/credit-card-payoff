@@ -1,0 +1,7 @@
+# ads.txt file for Credit Card Payoff Calculator
+# This file is required by Google AdSense to verify ownership
+# Replace XXXXXXXXXXXXXXXX with your actual AdSense Publisher ID
+# Your Publisher ID can be found in your AdSense account under Account > Account information
+
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+

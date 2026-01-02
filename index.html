@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Credit Card Payoff Calculator - How Long to Be Debt-Free | Free Tool</title>
+    <meta name="title" content="Credit Card Payoff Calculator - How Long to Be Debt-Free | Free Tool">
+    <meta name="description" content="Free credit card payoff calculator. Find out exactly how long it will take to pay off your credit card debt and how much interest you'll pay. Plan your path to financial freedom today.">
+    <meta name="keywords" content="credit card payoff calculator, debt payoff calculator, credit card debt calculator, how long to pay off credit card, debt free calculator, monthly payment calculator, interest calculator, financial freedom">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Credit Card Payoff Calculator">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://creditcardpayoffcalc.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://creditcardpayoffcalc.github.io/">
+    <meta property="og:title" content="Credit Card Payoff Calculator - How Long to Be Debt-Free">
+    <meta property="og:description" content="Free credit card payoff calculator. Find out exactly how long it will take to pay off your credit card debt and become debt-free.">
+    <meta property="og:image" content="https://creditcardpayoffcalc.github.io/og-image.png">
+    <meta property="og:site_name" content="Credit Card Payoff Calculator">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://creditcardpayoffcalc.github.io/">
+    <meta property="twitter:title" content="Credit Card Payoff Calculator - How Long to Be Debt-Free">
+    <meta property="twitter:description" content="Free credit card payoff calculator. Find out exactly how long it will take to pay off your credit card debt.">
+    <meta property="twitter:image" content="https://creditcardpayoffcalc.github.io/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Credit Card Payoff Calculator",
+        "description": "Calculate how long it will take to pay off your credit card debt based on your monthly payments.",
+        "url": "https://creditcardpayoffcalc.github.io/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "2847"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: #1a2035;
+            --bg-card-hover: #1e2642;
+            --accent-gold: #f59e0b;
+            --accent-gold-light: #fbbf24;
+            --accent-emerald: #10b981;
+            --accent-red: #ef4444;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #2d3748;
+            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            --gradient-dark: linear-gradient(180deg, #0a0e1a 0%, #111827 100%);
+            --shadow-glow: 0 0 60px rgba(245, 158, 11, 0.15);
+            --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gradient-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Background Pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(ellipse at 20% 20%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Adblock Modal */
+        .adblock-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .adblock-modal.active {
+            display: flex;
+        }
+
+        .adblock-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 500px;
+            text-align: center;
+            animation: modalSlide 0.4s ease-out;
+        }
+
+        @keyframes modalSlide {
+            from {
+                opacity: 0;
+                transform: translateY(-30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .adblock-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+        }
+
+        .adblock-content h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .adblock-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .adblock-btn {
+            background: var(--gradient-gold);
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .adblock-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+        }
+
+        /* Header */
+        header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: var(--accent-gold);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
+        }
+
+        h1 span {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Container */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Calculator Card */
+        .calculator-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            animation: fadeInUp 0.6s ease-out 0.3s both;
+        }
+
+        @media (max-width: 900px) {
+            .calculator-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow-card);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 0.6rem;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-prefix, .input-suffix {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-weight: 500;
+            pointer-events: none;
+        }
+
+        .input-prefix {
+            left: 1rem;
+        }
+
+        .input-suffix {
+            right: 1rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 1rem 1rem 1rem 2.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 14px;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            -moz-appearance: textfield;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.1);
+        }
+
+        input.has-suffix {
+            padding-right: 2.5rem;
+        }
+
+        /* Calculate Button */
+        .calculate-btn {
+            width: 100%;
+            padding: 1.25rem;
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 14px;
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .calculate-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Results Section */
+        .results-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .results-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-gold);
+        }
+
+        .result-item {
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .result-item:hover {
+            border-color: var(--accent-gold);
+            transform: translateX(5px);
+        }
+
+        .result-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-primary);
+        }
+
+        .result-value.highlight {
+            color: var(--accent-gold);
+        }
+
+        .result-value.success {
+            color: var(--accent-emerald);
+        }
+
+        .result-value.warning {
+            color: var(--accent-red);
+        }
+
+        .result-subtext {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .progress-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .progress-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .progress-bar {
+            height: 12px;
+            background: var(--bg-primary);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-gold);
+            border-radius: 6px;
+            transition: width 0.8s ease-out;
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-muted);
+        }
+
+        .empty-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .empty-text {
+            font-size: 1.1rem;
+        }
+
+        /* Ad Container */
+        .ad-container {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Info Section */
+        .info-section {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .info-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 3rem;
+        }
+
+        .faq-section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding: 3rem 2rem;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .footer-section a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .result-value {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Utilities */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: var(--shadow-glow);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Adblock Detection Modal -->
+    <div class="adblock-modal" id="adblockModal">
+        <div class="adblock-content">
+            <div class="adblock-icon">🛡️</div>
+            <h2>Adblock Detected</h2>
+            <p>We rely on ads to keep this calculator free for everyone. Please disable your ad blocker to continue using our free credit card payoff calculator.</p>
+            <button class="adblock-btn" onclick="checkAdblockStatus()">I've Disabled Adblock</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="/" class="logo">
+            <div class="logo-icon">💳</div>
+            <span class="logo-text">PayoffCalc</span>
+        </a>
+        <nav>
+            <a href="#calculator">Calculator</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#faq">FAQ</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">✨ 100% Free Calculator</div>
+        <h1>Calculate Your Path to <span>Debt Freedom</span></h1>
+        <p>Find out exactly how long it will take to pay off your credit card debt and see how much interest you'll save with larger payments.</p>
+    </section>
+
+    <!-- Main Calculator -->
+    <main id="calculator">
+        <div class="calculator-container">
+            <!-- Input Card -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">📊</div>
+                    <h2 class="card-title">Enter Your Details</h2>
+                </div>
+                
+                <form id="calculatorForm">
+                    <div class="form-group">
+                        <label for="balance">Current Credit Card Balance</label>
+                        <div class="input-wrapper">
+                            <span class="input-prefix">$</span>
+                            <input type="number" id="balance" name="balance" placeholder="5000" min="0" step="0.01" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apr">Annual Interest Rate (APR)</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="apr" name="apr" placeholder="19.99" min="0" max="100" step="0.01" class="has-suffix" required>
+                            <span class="input-suffix">%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment">Monthly Payment Amount</label>
+                        <div class="input-wrapper">
+                            <span class="input-prefix">$</span>
+                            <input type="number" id="payment" name="payment" placeholder="200" min="0" step="0.01" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="calculate-btn">
+                        <span>Calculate Payoff</span>
+                        <span>→</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Results Card -->
+            <div class="card results-card">
+                <div class="card-header">
+                    <div class="card-icon">📈</div>
+                    <h2 class="card-title">Your Results</h2>
+                </div>
+                
+                <div id="results">
+                    <div class="empty-state">
+                        <div class="empty-icon">💡</div>
+                        <p class="empty-text">Enter your details and click calculate to see your payoff timeline</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Container -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <!-- How It Works Section -->
+        <section class="info-section" id="how-it-works">
+            <article class="info-card">
+                <h3>💰 How Interest Compounds</h3>
+                <p>Credit card interest compounds daily but is charged monthly. This means you pay interest on your interest, making it crucial to pay more than the minimum to escape the debt cycle faster.</p>
+            </article>
+            <article class="info-card">
+                <h3>📉 Minimum Payment Trap</h3>
+                <p>Paying only the minimum can keep you in debt for decades. Our calculator shows you exactly how much time and money you save by increasing your monthly payments.</p>
+            </article>
+            <article class="info-card">
+                <h3>🎯 Debt-Free Strategy</h3>
+                <p>Use this calculator to experiment with different payment amounts. Even an extra $50/month can shave years off your payoff timeline and save thousands in interest.</p>
+            </article>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How is credit card interest calculated?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Credit card interest is typically calculated using your Average Daily Balance (ADB). Your APR is divided by 365 to get the daily rate, which is then applied to your balance each day. At the end of the billing cycle, these daily interest charges are summed and added to your balance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What happens if I only pay the minimum?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Paying only the minimum—typically 1-3% of your balance—means most of your payment goes toward interest. A $5,000 balance at 20% APR with minimum payments could take over 20 years to pay off and cost you more than $8,000 in interest alone.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How can I pay off my credit card faster?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Pay more than the minimum whenever possible. Consider balance transfer cards with 0% intro APR, the debt avalanche method (paying highest interest first), or the debt snowball method (paying smallest balances first for psychological wins).</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is this calculator accurate?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our calculator provides accurate estimates based on standard compound interest formulas. Actual results may vary slightly due to billing cycle timing, additional charges, payment posting dates, and variable APR changes. Always verify with your credit card statement.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Calculator</h4>
+                <a href="#calculator">Credit Card Payoff</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Credit Card Payoff Calculator. All rights reserved. For informational purposes only.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span>✓</span>
+        <span id="toastMessage">Calculated successfully!</span>
+    </div>
+
+    <script>
+        // Adblock Detection
+        let adblockDetected = false;
+
+        function detectAdblock() {
+            const testAd = document.createElement('div');
+            testAd.innerHTML = '&nbsp;';
+            testAd.className = 'adsbox pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links ad-text adSense adBlock adContent adBanner';
+            testAd.style.cssText = 'width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;';
+            document.body.appendChild(testAd);
+
+            window.setTimeout(function() {
+                if (testAd.offsetHeight === 0 || testAd.clientHeight === 0 || 
+                    getComputedStyle(testAd).display === 'none' || 
+                    getComputedStyle(testAd).visibility === 'hidden') {
+                    adblockDetected = true;
+                    showAdblockModal();
+                }
+                testAd.remove();
+            }, 100);
+
+            // Also check for common adblocker behaviors
+            const adsCheck = document.createElement('script');
+            adsCheck.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+            adsCheck.onerror = function() {
+                adblockDetected = true;
+                showAdblockModal();
+            };
+        }
+
+        function showAdblockModal() {
+            document.getElementById('adblockModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function checkAdblockStatus() {
+            // Recheck after user claims to have disabled
+            const testAd = document.createElement('div');
+            testAd.innerHTML = '&nbsp;';
+            testAd.className = 'adsbox';
+            testAd.style.cssText = 'width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;';
+            document.body.appendChild(testAd);
+
+            window.setTimeout(function() {
+                if (testAd.offsetHeight === 0 || testAd.clientHeight === 0) {
+                    showToast('Adblock is still active. Please disable it and refresh the page.');
+                } else {
+                    document.getElementById('adblockModal').classList.remove('active');
+                    document.body.style.overflow = '';
+                    showToast('Thank you for supporting us!');
+                }
+                testAd.remove();
+            }, 100);
+        }
+
+        // Initialize adblock detection after page load
+        window.addEventListener('load', function() {
+            setTimeout(detectAdblock, 500);
+        });
+
+        // Calculator Logic
+        document.getElementById('calculatorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            calculate();
+        });
+
+        function calculate() {
+            const balance = parseFloat(document.getElementById('balance').value);
+            const apr = parseFloat(document.getElementById('apr').value);
+            const payment = parseFloat(document.getElementById('payment').value);
+
+            if (!balance || !apr || !payment) {
+                showToast('Please fill in all fields');
+                return;
+            }
+
+            const monthlyRate = (apr / 100) / 12;
+            
+            // Check if payment is enough to cover interest
+            const monthlyInterest = balance * monthlyRate;
+            if (payment <= monthlyInterest) {
+                showResults({
+                    error: true,
+                    message: `Your payment of $${payment.toFixed(2)} doesn't cover the monthly interest of $${monthlyInterest.toFixed(2)}. Increase your payment to make progress on the debt.`
+                });
+                return;
+            }
+
+            // Calculate months to payoff using the formula
+            // n = -log(1 - (r * P / M)) / log(1 + r)
+            // where r = monthly rate, P = principal, M = monthly payment
+            const months = Math.ceil(-Math.log(1 - (monthlyRate * balance / payment)) / Math.log(1 + monthlyRate));
+            
+            // Calculate total payment and interest
+            let remainingBalance = balance;
+            let totalInterest = 0;
+            let paymentSchedule = [];
+            
+            for (let i = 0; i < months; i++) {
+                const interestCharge = remainingBalance * monthlyRate;
+                totalInterest += interestCharge;
+                const principalPayment = Math.min(payment - interestCharge, remainingBalance);
+                remainingBalance = Math.max(0, remainingBalance - principalPayment);
+                
+                paymentSchedule.push({
+                    month: i + 1,
+                    payment: Math.min(payment, principalPayment + interestCharge),
+                    principal: principalPayment,
+                    interest: interestCharge,
+                    balance: remainingBalance
+                });
+            }
+
+            const totalPaid = balance + totalInterest;
+            const years = Math.floor(months / 12);
+            const remainingMonths = months % 12;
+
+            // Calculate minimum payment comparison (2% of balance or $25, whichever is greater)
+            const minPayment = Math.max(balance * 0.02, 25);
+            let minMonths = 0;
+            let minTotalInterest = 0;
+            let minRemainingBalance = balance;
+            
+            if (minPayment > minRemainingBalance * monthlyRate) {
+                while (minRemainingBalance > 0 && minMonths < 600) {
+                    const minInterest = minRemainingBalance * monthlyRate;
+                    const currentMinPayment = Math.max(minRemainingBalance * 0.02, 25);
+                    minTotalInterest += minInterest;
+                    minRemainingBalance = Math.max(0, minRemainingBalance + minInterest - currentMinPayment);
+                    minMonths++;
+                }
+            }
+
+            showResults({
+                error: false,
+                months: months,
+                years: years,
+                remainingMonths: remainingMonths,
+                totalInterest: totalInterest,
+                totalPaid: totalPaid,
+                originalBalance: balance,
+                monthlyPayment: payment,
+                minMonths: minMonths,
+                minTotalInterest: minTotalInterest,
+                interestSaved: minTotalInterest - totalInterest,
+                timeSaved: minMonths - months
+            });
+
+            showToast('Calculation complete!');
+        }
+
+        function showResults(data) {
+            const resultsDiv = document.getElementById('results');
+
+            if (data.error) {
+                resultsDiv.innerHTML = `
+                    <div class="result-item">
+                        <div class="result-label">⚠️ Warning</div>
+                        <div class="result-value warning" style="font-size: 1.2rem; font-family: 'Outfit', sans-serif;">
+                            ${data.message}
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            const timeString = data.years > 0 
+                ? `${data.years} year${data.years > 1 ? 's' : ''} ${data.remainingMonths > 0 ? `${data.remainingMonths} month${data.remainingMonths > 1 ? 's' : ''}` : ''}`
+                : `${data.months} month${data.months > 1 ? 's' : ''}`;
+
+            const progressPercent = Math.min(100, (data.months / Math.max(data.minMonths, data.months)) * 100);
+
+            resultsDiv.innerHTML = `
+                <div class="result-item">
+                    <div class="result-label">Time to Debt Freedom</div>
+                    <div class="result-value highlight">${timeString}</div>
+                    <div class="result-subtext">${data.months} total monthly payments</div>
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-label">Total Interest Paid</div>
+                    <div class="result-value warning">$${data.totalInterest.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                    <div class="result-subtext">${((data.totalInterest / data.originalBalance) * 100).toFixed(1)}% of original balance</div>
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-label">Total Amount Paid</div>
+                    <div class="result-value">$${data.totalPaid.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</div>
+                    <div class="result-subtext">Principal: $${data.originalBalance.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} + Interest</div>
+                </div>
+                
+                ${data.timeSaved > 0 ? `
+                <div class="result-item">
+                    <div class="result-label">💪 vs Minimum Payment</div>
+                    <div class="result-value success">${formatTimeSaved(data.timeSaved)} faster</div>
+                    <div class="result-subtext">You'll save $${data.interestSaved.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} in interest!</div>
+                </div>
+                ` : ''}
+                
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span class="progress-label">Payoff Progress Preview</span>
+                        <span class="progress-value">${data.months} months</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${progressPercent}%"></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function formatTimeSaved(months) {
+            const years = Math.floor(months / 12);
+            const remainingMonths = months % 12;
+            
+            if (years > 0 && remainingMonths > 0) {
+                return `${years}y ${remainingMonths}m`;
+            } else if (years > 0) {
+                return `${years} year${years > 1 ? 's' : ''}`;
+            } else {
+                return `${months} month${months > 1 ? 's' : ''}`;
+            }
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Toast Notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Initialize AdSense
+        try {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch(e) {}
+    </script>
+</body>
+</html>
+

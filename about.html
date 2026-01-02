@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Credit Card Payoff Calculator | Free Debt Freedom Tool</title>
+    <meta name="description" content="Learn about Credit Card Payoff Calculator - a free tool designed to help you understand your credit card debt and plan your path to financial freedom.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://creditcardpayoffcalc.github.io/about.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: #1a2035;
+            --accent-gold: #f59e0b;
+            --accent-emerald: #10b981;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #2d3748;
+            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, #0a0e1a 0%, #111827 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .cta {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 16px;
+            margin-top: 2rem;
+        }
+
+        .cta h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--gradient-gold);
+            color: #000;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        footer a:hover {
+            color: var(--accent-gold);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            main {
+                padding: 2rem 1rem;
+            }
+            .content {
+                padding: 1.5rem;
+            }
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">
+            <div class="logo-icon">💳</div>
+            <span class="logo-text">PayoffCalc</span>
+        </a>
+        <nav>
+            <a href="index.html">Calculator</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>About Credit Card Payoff Calculator</h1>
+            <p>A free, easy-to-use tool designed to help you understand your credit card debt and plan your journey to financial freedom.</p>
+        </div>
+
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>We believe that financial literacy should be accessible to everyone. Credit card debt is one of the most common financial challenges people face, and understanding how it works is the first step to overcoming it.</p>
+            <p>Our calculator was built to give you clear, accurate insights into your debt payoff timeline. By seeing exactly how long it will take to become debt-free and how much interest you'll pay, you can make informed decisions about your financial future.</p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Free to Use</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Data Stored</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">∞</div>
+                    <div class="stat-label">Calculations</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Why Use Our Calculator?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Private</h3>
+                    <p>All calculations happen in your browser. We never store or transmit your financial data.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Results</h3>
+                    <p>Get your payoff timeline and interest calculations in milliseconds.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Accurate Math</h3>
+                    <p>Uses industry-standard compound interest formulas for precise estimates.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Works Everywhere</h3>
+                    <p>Use on any device - phone, tablet, or computer. No app download required.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3>Educational</h3>
+                    <p>Learn how credit card interest works and see the impact of larger payments.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Setting</h3>
+                    <p>Set a debt-free target date and find out how much you need to pay monthly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>How It Works</h2>
+            <p>Our calculator uses the standard compound interest formula to determine your payoff timeline. When you enter your current balance, annual percentage rate (APR), and desired monthly payment, we calculate:</p>
+            <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                <li>How many months until you're debt-free</li>
+                <li>Total interest you'll pay over the life of the debt</li>
+                <li>Total amount paid (principal + interest)</li>
+                <li>Comparison to minimum payment scenarios</li>
+            </ul>
+            <p style="margin-top: 1rem;">This helps you see the real cost of your debt and motivates you to pay more than the minimum whenever possible.</p>
+
+            <div class="cta">
+                <h3>Ready to start your debt-free journey?</h3>
+                <a href="index.html" class="cta-btn">Use the Calculator →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Credit Card Payoff Calculator. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </p>
+    </footer>
+</body>
+</html>
+

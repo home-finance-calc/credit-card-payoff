@@ -1,0 +1,21 @@
+{
+    "name": "Credit Card Payoff Calculator",
+    "short_name": "PayoffCalc",
+    "description": "Calculate how long it will take to pay off your credit card debt based on your monthly payments.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0e1a",
+    "theme_color": "#f59e0b",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["finance", "utilities"],
+    "lang": "en-US"
+}
+
